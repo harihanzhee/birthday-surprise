@@ -24,7 +24,11 @@ openButton.addEventListener("click", function () {
     openButton.textContent = "Your letter is here ♡";
     openButton.disabled = true;
 
-    backgroundMusic.play().catch(function (error) {
+    backgroundMusic.play()
+    .then(function () {
+        console.log("Musik berhasil diputar!");
+    })
+    .catch(function (error) {
         console.log("Musik belum bisa diputar:", error);
     });
 });

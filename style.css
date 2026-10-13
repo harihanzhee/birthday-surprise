@@ -1,0 +1,249 @@
+/* ===== BLUE DREAM THEME ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #071426;
+    color: #edf5ff;
+}
+
+.opening {
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 30px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+        rgba(3, 12, 29, 0.48),
+        rgba(3, 12, 29, 0.62)
+    ),
+    url("ocean-background.jpeg") center center / cover no-repeat;
+}
+
+.small-title {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.envelope {
+    font-size: 85px;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 8px 12px #ffffff);
+}
+
+h1 {
+    font-size: clamp(35px, 8vw, 58px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #ffffff;
+    max-width: 340px;
+}
+
+#openButton {
+    margin-top: 30px;
+    padding: 15px 27px;
+    border: 1px solid #ffffff;
+    border-radius: 40px;
+    background: #527eae;
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 8px 22px #527eae35;
+    transition: all 0.3s ease;
+}
+
+#openButton:hover {
+    background: #365d8c;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px #527eae45;
+}
+
+.signature {
+    margin-top: 35px;
+    font-size: 12px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+/* ===== LOVE LETTER SECTION ===== */
+
+.letter-section {
+    width: 100%;
+    padding: 55px 20px 70px;
+    background: linear-gradient(
+        180deg,
+        #d9eaff41,
+        #f5faff3a,
+        #e3efff47
+    );
+}
+
+.letter-card {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 38px 32px;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 15px 45px rgba(52, 91, 139, 0.12);
+    text-align: center;
+}
+
+.letter-label {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #2f4d73;
+    margin-bottom: 20px;
+}
+
+.letter-decoration {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.letter-card h2 {
+    font-size: clamp(25px, 5vw, 36px);
+    line-height: 1.35;
+    font-weight: normal;
+    color: #243b60;
+    margin-bottom: 28px;
+}
+
+.letter-greeting {
+    text-align: left;
+    font-size: 17px;
+    color: #21446f;
+    margin-bottom: 18px;
+}
+
+.letter-text {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #1c3657;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.letter-closing {
+    text-align: right;
+    font-size: 15px;
+    line-height: 1.9;
+    font-style: italic;
+    color: #264265;
+    margin-top: 28px;
+}
+
+@media (max-width: 480px) {
+    .letter-section {
+        padding: 35px 16px 50px;
+    }
+
+    .letter-card {
+        padding: 28px 22px;
+        border-radius: 20px;
+    }
+
+    .letter-text {
+        font-size: 15px;
+    }
+}
+.notion-gift {
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid #dce8f5;
+    text-align: center;
+}
+
+.notion-gift p {
+    color: #2e4869;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.notion-button {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #8dbce8, #527eaf);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.notion-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(82, 126, 175, 0.25);
+}
+.video-surprise {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.video-surprise h2 {
+    color: #fdfefe;
+    margin-bottom: 10px;
+}
+
+.video-surprise p {
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+.video-button {
+    display: inline-block;
+    padding: 14px 24px;
+    background: #dcecf7;
+    color: #1d3b54;
+    text-decoration: none;
+    border: 1px solid #b8d4e8;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.video-button:hover {
+    background: #c6e0f2;
+    transform: translateY(-2px);
+}

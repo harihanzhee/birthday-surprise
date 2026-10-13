@@ -26,10 +26,10 @@ openButton.addEventListener("click", function () {
 
     backgroundMusic.play()
     .then(function () {
-        console.log("Musik berhasil diputar!");
+        console.log("Musik berhasil diputar");
     })
     .catch(function (error) {
-        console.log("Musik belum bisa diputar:", error);
+        console.log("Musik gagal diputar:", error);
     });
 });
 

@@ -668,3 +668,36 @@ main,
         font-size: 12px;
     }
 }
+
+/* ===== FIRST IMPRESSION PHOTO ===== */
+
+.first-impression-photo {
+    width: 100%;
+    max-width: 340px;
+    margin: 22px auto 25px;
+    padding: 7px;
+    overflow: hidden;
+    border: 1px solid rgba(185, 216, 240, 0.55);
+    border-radius: 16px;
+    background: rgba(141, 188, 232, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+}
+
+.first-impression-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.first-impression .story-decoration {
+    margin-top: 8px;
+}
+
+@media (max-width: 480px) {
+    .first-impression-photo {
+        max-width: 290px;
+        margin: 18px auto 22px;
+        padding: 5px;
+    }
+}

@@ -1,3 +1,4 @@
+
 /* ===== BLUE DREAM THEME ===== */
 
 * {
@@ -105,6 +106,7 @@ h1 {
         transition: none !important;
     }
 }
+
 /* ===== LOVE LETTER SECTION ===== */
 
 .letter-section {
@@ -188,6 +190,9 @@ h1 {
         font-size: 15px;
     }
 }
+
+/* ===== NOTION GIFT ===== */
+
 .notion-gift {
     margin-top: 30px;
     padding-top: 22px;
@@ -216,6 +221,9 @@ h1 {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(82, 126, 175, 0.25);
 }
+
+/* ===== VIDEO SURPRISE ===== */
+
 .video-surprise {
     text-align: center;
     padding: 40px 20px;
@@ -246,4 +254,417 @@ h1 {
 .video-button:hover {
     background: #c6e0f2;
     transform: translateY(-2px);
+}
+
+/* ===== STORY SECTION ===== */
+
+[hidden] {
+    display: none !important;
+}
+
+.story-heading,
+.story-card,
+.story-ending {
+    width: min(100%, 720px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story-heading {
+    padding: 65px 22px 30px;
+    text-align: center;
+    color: #f0f6ff;
+}
+
+.story-eyebrow,
+.story-number {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #8dbce8;
+    margin-bottom: 16px;
+}
+
+.story-heading h2 {
+    font-size: clamp(27px, 5vw, 38px);
+    line-height: 1.3;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.story-heading > p:last-child {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #d9e8fa;
+}
+
+.story-card {
+    margin-top: 24px;
+    margin-bottom: 28px;
+    padding: 30px;
+    border: 1px solid #b9d8f033;
+    border-radius: 22px;
+    background: linear-gradient(
+        145deg,
+        rgba(25, 52, 83, 0.92),
+        rgba(10, 27, 49, 0.96)
+    );
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.14);
+    text-align: center;
+}
+
+.story-card h3,
+.story-ending h3 {
+    color: #f5f9ff;
+    font-size: clamp(23px, 4vw, 31px);
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.story-text {
+    max-width: 560px;
+    margin: 0 auto 24px;
+    color: #dce9f8;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+/* ===== FIRST FOUR CHAT SCREENSHOTS ===== */
+
+.chat-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    align-items: start;
+}
+
+.chat-gallery a {
+    display: block;
+    overflow: hidden;
+    border: 1px solid #c7e0f44d;
+    border-radius: 13px;
+    background: #0a1728;
+}
+
+.chat-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.chat-gallery a:hover img {
+    transform: scale(1.025);
+}
+
+.gallery-hint {
+    margin-top: 14px;
+    color: #a9c7e7;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+/* ===== FIRST IMPRESSION ===== */
+
+.first-impression {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    background:
+        radial-gradient(
+            ellipse at top,
+            rgba(95, 143, 192, 0.18),
+            transparent 65%
+        ),
+        linear-gradient(145deg, #142d4a, #091629);
+}
+
+.story-decoration {
+    margin: 8px 0 18px;
+    color: #a8cbed;
+    font-size: 20px;
+}
+
+.small-quote {
+    max-width: 470px;
+    margin: 26px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #b9d8f033;
+    color: #bcd8f5;
+    font-size: 14px;
+    line-height: 1.9;
+    font-style: italic;
+}
+
+/* ===== MAP PHOTO ===== */
+
+.map-photo {
+    display: block;
+    max-width: 520px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #c7e0f44d;
+    border-radius: 16px;
+    background: #0a1728;
+}
+
+.map-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.map-photo:hover img {
+    transform: scale(1.02);
+}
+
+/* ===== MEMORY GALLERY PLACEHOLDERS ===== */
+
+.memory-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.memory-placeholder {
+    min-height: 150px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 1px dashed #9fc6ec70;
+    border-radius: 14px;
+    background: rgba(141, 188, 232, 0.07);
+    color: #c4ddf5;
+}
+
+.memory-placeholder span {
+    font-size: 25px;
+    color: #a8cbed;
+}
+
+.memory-placeholder p {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* ===== STORY ENDING ===== */
+
+.story-ending {
+    padding: 45px 28px 20px;
+    text-align: center;
+}
+
+.story-ending p {
+    max-width: 520px;
+    margin: 0 auto;
+    color: #dce9f8;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+/* ===== NOTION BELOW THE STORIES ===== */
+
+.notion-gift {
+    width: min(calc(100% - 40px), 620px);
+    margin: 28px auto 20px;
+    padding: 30px 20px;
+    border: 1px solid #2e516c;
+    border-radius: 20px;
+    background: #112744;
+    text-align: center;
+}
+
+.notion-gift p {
+    color: #f8f9fa;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.notion-button {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #8dbce8, #527eaf);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notion-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(82, 126, 175, 0.25);
+}
+
+/* ===== VIDEO: KEEP ITS ORIGINAL BEHAVIOUR ===== */
+
+.video-surprise {
+    text-align: center;
+    padding: 40px 20px 55px;
+}
+
+/* ===== LET THE OCEAN BACKGROUND SHOW THROUGH ===== */
+
+html,
+body {
+    background-color: transparent;
+}
+
+body {
+    background-image: url("ocean-background.jpeg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+main,
+.letter-section {
+    background-color: transparent !important;
+}
+
+.opening {
+    background-color: transparent !important;
+}
+
+/* ===== PIECES OF US: MEMORY GALLERY ===== */
+
+.pieces-of-us {
+    overflow: hidden;
+}
+
+.memory-category {
+    margin-top: 34px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(185, 216, 240, 0.18);
+}
+
+.memory-category h4 {
+    margin-bottom: 8px;
+    color: #eef6ff;
+    font-size: clamp(18px, 3.5vw, 23px);
+    font-weight: normal;
+    line-height: 1.45;
+}
+
+.memory-category-note {
+    margin: 0 auto 18px;
+    color: #bcd4ee;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.memory-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px;
+    align-items: start;
+}
+
+.memory-item {
+    display: block;
+    overflow: hidden;
+    border: 1px solid rgba(199, 224, 244, 0.28);
+    border-radius: 13px;
+    background: rgba(4, 16, 31, 0.65);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.13);
+}
+
+.memory-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.memory-item:hover img {
+    transform: scale(1.035);
+    opacity: 0.94;
+}
+
+.call-gallery .memory-item img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+}
+
+.chat-memory-gallery .memory-item img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+@media (min-width: 620px) {
+    .memory-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+    .call-gallery .memory-item img,
+    .chat-memory-gallery .memory-item img {
+        aspect-ratio: auto;
+        object-fit: contain;
+    }
+}
+
+/* ===== MOBILE LAYOUT ===== */
+
+@media (max-width: 480px) {
+    .story-heading {
+        padding: 45px 20px 22px;
+    }
+
+    .story-card {
+        width: calc(100% - 28px);
+        padding: 23px 18px;
+        margin-top: 18px;
+        margin-bottom: 20px;
+        border-radius: 18px;
+    }
+
+    .story-text {
+        font-size: 14px;
+    }
+
+    .chat-gallery,
+    .memory-gallery {
+        gap: 9px;
+    }
+
+    .memory-placeholder {
+        min-height: 125px;
+        padding: 14px 8px;
+    }
+
+    .story-ending {
+        padding: 35px 24px 15px;
+    }
+
+    .notion-gift {
+        width: calc(100% - 28px);
+        padding: 25px 16px;
+    }
+
+    .memory-category {
+        margin-top: 28px;
+        padding-top: 21px;
+    }
+
+    .memory-gallery {
+        gap: 8px;
+    }
+
+    .memory-item {
+        border-radius: 10px;
+    }
+
+    .memory-category-note {
+        font-size: 12px;
+    }
 }
